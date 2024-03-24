@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    justify-content: center;
+    /* background: #1c2841; */
+}
+.login-page{
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    
+}
+.head{
+    color: black;
+    /* padding: 0px 0px 10px 0px; */
+}   
+
+.ca{
+    display: flex;
+    /* margin-right: 1000px ; */
+    justify-content: center;
+    align-items: ;
+    /* border: 1px solid black; */
+}
+
+.input{
+    width: 680px;
+    color: black;
+    position: relative;
+    line-height: 30px;
+    height: 80px;
+}
+.input1{
+    position: absolute;
+    /* top: 40px; */
+    width: 80%;
+}
+.input1 > input{
+    position: absolute;
+    color: black;
+    /* height: 80px; */
+    width: 100%;
+    outline: none;
+    padding: 0 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+    
+}
+.input2{
+    position: absolute;
+    top: 40px;
+    width: 80%;
+}
+.input2 > input{
+    position: absolute;
+    color: black;
+    /* height: 80px; */
+    width: 100%;
+    outline: none;
+    padding: 0 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+    
+}
+.label1{
+    /* position: absolute; */
+    font-size: 1em;
+    color: black;
+    /* padding: 1 px; */
+    margin: 0 25px;
+    transition: 0.2 ease;
+}
+.label2{
+    /* position: absolute; */
+    font-size: 1em;
+    color: black;
+    padding: 0 25x;
+    margin: 0 25px;
+    transition: 0.2 ease;
+}
+
+.button{
+    color: black;
+}

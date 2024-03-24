@@ -1,0 +1,24 @@
+{
+  "user": [
+    {
+      "id": "alexturner",
+      "name": "alex",
+      "password": "alex123",
+      "email": "alex@gmail.com",
+      "phone": "456789098765",
+      "country": "India",
+      "address": "",
+      "gender": "male"
+    },
+    {
+      "id": "shreyas",
+      "name": "shreyas",
+      "password": "shreyas21",
+      "email": "sazdxcfgvbk@gmail.com",
+      "phone": "8756743267",
+      "country": "India",
+      "address": "",
+      "gender": "male"
+    }
+  ]
+}
