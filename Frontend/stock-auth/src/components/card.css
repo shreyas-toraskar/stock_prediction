@@ -1,0 +1,36 @@
+.main-card {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  /* background-color: black; */
+  background-image: url("./images/card-bg1.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 695px;
+  justify-content: space-between;
+  /* min-height: 85.1vh; */
+}
+
+.cardDiv{
+
+  /* border: 3px solid pink; */
+  width: 36%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* margin-left: 30px; */
+  /* margin: 8px; */
+  padding: 5%;
+  height: 600px;
+  /* border-radius: 20px; */
+  /* backdrop-filter: blur(20px); */
+}
+.cardDiv:hover{
+    transform: scale(1.009);
+    transition: all .1s ease-in;
+    backdrop-filter: blur(1px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px; */
+  /* border: 3px solid pink; */
+}
+
+

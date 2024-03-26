@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 // import registration from './Registration';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import img from './images/4.jpg';
+import img from './images/1.jpg';
 import './login.css';
 
 export default function Login() {
@@ -25,9 +25,11 @@ export default function Login() {
           toast.error("Please Enter Valid Username!")
         } else {
           if (resp.password === password) {
+            console.log("S")
             toast.success('Successfully Logged In');
             sessionStorage.setItem('username', username);
-            window.location.assign('http://localhost:8501');
+            // window.location.assign('http://localhost:8501');
+            usenavigate('/card');
           } else {
             toast.error("Please Enter Valid Credentials!!")
           }
@@ -53,20 +55,25 @@ export default function Login() {
   }
   return (
     <div className="login-page">
-      
+      <div className='bg'>
+        
+      </div>
+      <div className='img'>
+        {/* <img src={img}></img> */}
+      </div>
+      <div className='head'>
+        <h1>Login To Your Account</h1>
+      </div>
       <div className='ca'>
         <form onSubmit={proceed} className='form'>
           <div className='ok'>  
-          <div className='head'>
-            <h1>Login To Your Account</h1>
-          </div>
             <div className='input'>
               <div className='input1'>
-                <label className='label1'>Username <span>*</span></label>
+                <label className='label1'>Username <span className='req'>*</span></label>
                 <input type='text' value={username} onChange={e => updatedUsername(e.target.value)} className=''></input>
               </div>
               <div className='input2'>
-                <label className='label2'>password <span>*</span></label>
+                <label className='label2'>Password <span className='req'>*</span></label>
                 <input type='password' value={password} onChange={e => updatedPassword(e.target.value)} className=''></input>
               </div>
             </div>

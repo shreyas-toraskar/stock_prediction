@@ -13,8 +13,13 @@
     align-items: center;
     
 }
+.bg{
+    color: aquamarine;
+}
 .head{
-    color: black;
+    /* color: black; */
+    top: 20%;
+    position: absolute;
     /* padding: 0px 0px 10px 0px; */
 }   
 
@@ -22,7 +27,6 @@
     display: flex;
     /* margin-right: 1000px ; */
     justify-content: center;
-    align-items: ;
     /* border: 1px solid black; */
 }
 
@@ -40,14 +44,14 @@
 }
 .input1 > input{
     position: absolute;
-    color: black;
+    color: white;
     /* height: 80px; */
     width: 100%;
     outline: none;
     padding: 0 30px;
     line-height: 30px;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid white;
     background: transparent;
     transition: 0.1s ease;
     z-index: 1111;
@@ -60,14 +64,15 @@
 }
 .input2 > input{
     position: absolute;
-    color: black;
+    margin-left: 4.5px ;
+    color: white;
     /* height: 80px; */
     width: 100%;
     outline: none;
     padding: 0 30px;
     line-height: 30px;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid white     ;
     background: transparent;
     transition: 0.1s ease;
     z-index: 1111;
@@ -76,20 +81,38 @@
 .label1{
     /* position: absolute; */
     font-size: 1em;
-    color: black;
+    color: white;
     /* padding: 1 px; */
-    margin: 0 25px;
+    /* margin: 0 25px; */
     transition: 0.2 ease;
 }
 .label2{
     /* position: absolute; */
     font-size: 1em;
-    color: black;
-    padding: 0 25x;
-    margin: 0 25px;
+    color: white;
+    /* padding: 0 25x; */
+    /* margin: 0 25px; */
     transition: 0.2 ease;
 }
 
-.button{
+.button1{
+    position: absolute;
     color: black;
+    margin-left: 15% ;
+}
+.button2{
+    display: flex;
+    position: absolute;
+    margin-left: 25%;
+    top:430px;
+}
+.req{
+    color: red;
+}
+.login-page{
+  background-image: url("./images/1.jpg");
+  /* height: 670px; */
+  background-size:cover;
+  background-repeat: no-repeat;
+  /* min-height: 85.1vh; */
 }
