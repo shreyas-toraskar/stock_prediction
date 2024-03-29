@@ -6,13 +6,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Login from './components/Login';
 import Registration from './components/Registration';
-import { ToastContainer } from 'react-toastify';
+// import { ToastContainer } from 'react-toastify';
+import { Toaster } from 'react-hot-toast';
 import ImgMediaCard from './components/card';
-
-import ScrollToTop from './ScrollToTop';
-import NavBar from './Navbar';
-
-
 
 function App() {
 
@@ -20,11 +16,13 @@ function App() {
   return (
     <>
       <div className="App"> 
-      <ToastContainer position="top-center" autoClose={3000} hideProgressBar={false} newestOnTop closeOnClick rtl={false}
-        pauseOnFocusLoss draggable pauseOnHover theme="dark" transition: Bounce> </ToastContainer>
+      {/* <ToastContainer position="top-center" autoClose={3000} hideProgressBar={false} newestOnTop closeOnClick rtl={false}
+        pauseOnFocusLoss draggable pauseOnHover theme="light" transition: Bounce> </ToastContainer> */}
+        <Toaster
+          position="top-center"
+          reverseOrder={false}
+        />
         <BrowserRouter>
-        <NavBar/>
-        <ScrollToTop/>
         <Routes>
           {/* <Route path='/' element={<Home/>}></Route> */}
           {/* <Route path='/login' element={<Login/>}></Route> */}

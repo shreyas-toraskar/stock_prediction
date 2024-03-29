@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 // import registration from './Registration';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
+import { Toaster, toast } from 'react-hot-toast';
 import img from './images/1.jpg';
 import './login.css';
 
@@ -31,7 +32,7 @@ export default function Login() {
             // window.location.assign('http://localhost:8501');
             usenavigate('/card');
           } else {
-            toast.error("Please Enter Valid Credentials!!")
+            toast.error("Please Enter Valid Credentials!!");
           }
         }
         console.log(resp)
@@ -54,37 +55,33 @@ export default function Login() {
     return result;
   }
   return (
-    <div className="login-page">
-      <div className='bg'>
-        
-      </div>
-      <div className='img'>
-        {/* <img src={img}></img> */}
-      </div>
-      <div className='head'>
-        <h1>Login To Your Account</h1>
-      </div>
-      <div className='ca'>
-        <form onSubmit={proceed} className='form'>
-          <div className='ok'>  
-            <div className='input'>
-              <div className='input1'>
-                <label className='label1'>Username <span className='req'>*</span></label>
-                <input type='text' value={username} onChange={e => updatedUsername(e.target.value)} className=''></input>
-              </div>
-              <div className='input2'>
-                <label className='label2'>Password <span className='req'>*</span></label>
-                <input type='password' value={password} onChange={e => updatedPassword(e.target.value)} className=''></input>
-              </div>
-            </div>
-            <div className='button'>
-              <button type='submit' className='button1'> Login</button>
-              <Link className='button2' to={'/registration'}> New User? Click Here </Link>
-            </div>
+      <div className="login-page">
+        <div className='container1'>
+          <div className='head'>
+            <h1>Login To Your Account</h1>
           </div>
-        </form>
+          <div className='ca'>
+            <form onSubmit={proceed} className='form'>
+              <div className='ok'>
+                <div className='input'>
+                  <div className='input1'>
+                    <label className='label1'>Username <span className='req'>*</span></label>
+                    <input type='text' value={username} onChange={e => updatedUsername(e.target.value)} className=''></input>
+                  </div>
+                  <div className='input2'>
+                    <label className='label2'>Password <span className='req'>*</span></label>
+                    <input type='password' value={password} onChange={e => updatedPassword(e.target.value)} className=''></input>
+                  </div>
+                </div>
+                <div className='button'>
+                  <button type='submit' className='button1'> Login</button>
+                  <Link className='button2' to={'/registration'}> New User? Click Here </Link>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
 
   )
 }

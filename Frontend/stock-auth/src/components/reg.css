@@ -1,3 +1,35 @@
+*{
+    justify-content: center;
+    /* display: flex; */
+    color: black;
+}
 .row{
     backdrop-filter: blur(3px);
+}
+.main-contenttt{
+    /* border: 3px solid yellow; */
+    height: 695px;
+}
+.card1{
+    position: absolute;
+    /* border: 3px  solid #0c84ff; */
+    top:15%;
+    width: 90%;
+    margin-left: -2.5%;
+}
+.card-header1{
+    color: rgb(0, 0, 0);
+}
+span{
+    color: red;
+}
+.okk{
+    display: inline-block;
+}
+.okk>div{
+    width: 40%;     
+}
+.okk>.card-body{
+    width: 60%;
+    right: 0px;
 }
